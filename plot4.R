@@ -18,7 +18,7 @@ plot(hpc_extract$timestamp, hpc_extract$Voltage, type = "l", xlab = "datetime", 
 plot(hpc_extract$timestamp, hpc_extract$Sub_metering_1, type="l", xlab="", ylab = "Energy sub metering")
 lines(hpc_extract$timestamp, hpc_extract$Sub_metering_2, col = 'red')
 lines(hpc_extract$timestamp, hpc_extract$Sub_metering_3, col = 'blue')
-legend("topright", lwd = 1, col = c('black','red','blue'), legend = c('Sub_metering_1','Sub_metering_2','Sub_metering_3'))
+legend("topright", lwd = 1, col = c('black','red','blue'),bty="n",cex=0.8, legend = c('Sub_metering_1','Sub_metering_2','Sub_metering_3'))
 # Plot 4
 plot(hpc_extract$timestamp, hpc_extract$Global_reactive_power, type = "l", xlab = "datetime", ylab = "Global_reactive_power")
 
